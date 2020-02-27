@@ -1,20 +1,20 @@
-# # hungry = True
+hungry = True
 
-# # if hungry:
-# #     print('FEED ME!')
-# # else:
-# #     print('Im not hungry')
+if hungry:
+    print('FEED ME!')
+else:
+    print('Im not hungry')
 
-# loc = 'Bank'
+loc = 'Bank'
 
-# if loc == 'Auto Shop':
-#     print('Cars are cool!')
-# elif loc == 'Bank':
-#     print('Money is cool!')
-# elif loc == 'Store':
-#     print('Welcome to the store!')
-# else:
-#     print('I do not know much.')
+if loc == 'Auto Shop':
+    print('Cars are cool!')
+elif loc == 'Bank':
+    print('Money is cool!')
+elif loc == 'Store':
+    print('Welcome to the store!')
+else:
+    print('I do not know much.')
 
 name = 'Sammy'
 
