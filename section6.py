@@ -187,8 +187,8 @@
 #  FUNCTION #8: *ARGS
 # ========================================================
 
-def myfunc(*args):
-    return sum(args)
+# def myfunc(*args):
+#     return sum(args)
 
 # ========================================================
 #  FUNCTION #9: PICK EVENS
@@ -444,3 +444,93 @@ def myfunc(*args):
 # x = func(x)
 
 # print(x)
+
+# ========================================================
+#  FUNCTIONS AND METHODS - HOMEWORK ASSIGNMENT
+# ========================================================
+
+# import math
+
+# def vol(rad):
+#     # 4/3π * radius
+#     return 4/3*math.pi*rad**3
+
+# result = vol(2)
+
+# def ran_check(num, low, high):
+#     if num >= low or num <= high:
+#         return f'{num} is in the range between {low} and {high}'
+
+
+# result = ran_check(5, 2, 7)
+
+
+# def ran_bool(num, low, high):
+#     return num >= low or num <= high
+
+
+# result = ran_bool(3, 1, 10)
+
+
+# def up_low(s):
+#     uppercase = 0
+#     lowercase = 0
+
+#     for letter in s:
+#         if letter.isupper():
+#             uppercase += 1
+#         elif letter.islower():
+#             lowercase += 1
+
+#     return f'Uppercase Count: {uppercase}\nLowercase Count: {lowercase}'
+
+
+# s = 'Hello Mr. Rogers, how are you this fine Tuesday?'
+# result = up_low(s)
+
+# print(result)
+
+# def unique_list(lst):
+#     return list(set(lst))
+
+
+# # result = unique_list([1, 1, 1, 1, 2, 2, 3, 3, 3, 3, 4, 5])
+
+# def multiply(numbers):
+#     result = 1
+
+#     for x in numbers:
+#         result *= x
+
+#     return result
+
+# # import functools import reduce
+
+# # def multiply2(numbers):
+# #     return reduce(lambda x, y: x*y, numbers)
+
+# result = multiply([1,2,3,-4])
+# # result2 = multiply2([1,2,3,-4])
+
+
+# def palindrome(s):
+#     return s == s[::-1]
+
+
+# result = palindrome('helleh')
+
+
+import string
+
+
+def ispangram(str1, alphabet=string.ascii_lowercase):
+    abccount = []
+
+    for letter in str1.lower():
+        if letter not in abccount and letter != ' ':
+            abccount.append(letter)
+
+    return len(abccount) == 26
+
+
+result = ispangram("The quick brown fox jumps over the lazy dog")
